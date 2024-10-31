@@ -6,7 +6,7 @@ public class Building {
 
     public Building(String name, String address, int nFloors) {
         if (name != null) { this.name = name; }
-        if (address != null) { this.address = address; } 
+        if (address != null) { this.address = address; }
         if (nFloors < 1) {
             throw new RuntimeException("Cannot construct a building with fewer than 1 floor.");
         }
@@ -30,7 +30,7 @@ public class Building {
     }
 
     public static void main(String[] args) {
-        Building fordHall = new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4);
+        Building fordHall = new Building("\n\nFord Hall", "100 Green Street Northampton, MA 01063", 4);
         System.out.println(fordHall);
     }
 
